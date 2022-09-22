@@ -2,52 +2,57 @@ header,
 nav,
 section,
 footer {
-  background: #6fbec4;
+  background: #51c5cd;
   border-radius: 7px;
   color: #fff;
   margin: 0 1.5% 1em 1.5%;
   padding: 1em 0em;
   text-align: center;
 }
-main, aside {
+
+main,
+aside {
   min-height: 7em;
 }
+
 section {
   float: right;
   width: 70%;
 }
+
 aside {
   float: left;
   width: 23%;
 }
+
 footer {
   clear: both;
   margin-bottom: 0;
 }
 
 header {
-    background: no-repeat left/cover url(bg.jpg);
-    display: flex;
-    height: 120px;
-    min-width: 120px;
-    align-items: center;
-    color: #fff;
-    text-shadow: #000 0 0 .2em;
+  background: no-repeat left/cover url(bg.jpg);
+  display: flex;
+  height: 120px;
+  min-width: 120px;
+  align-items: center;
+  color: #fff;
+  text-shadow: #000 0 0 .2em;
 }
 
-header > h1 {
-    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,
-        fantasy;
-    margin: 2%;
+header>h1 {
+  font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive, fantasy;
+  margin: 2%;
 }
 
 ol {
-    display: flex;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
+
 nav a::after {
-    content: '>';
-    display: inline-block;
-    padding: 0 4px;
+  content: '>';
+  display: inline-block;
+  padding: 0 4px;
 }
