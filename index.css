@@ -1,36 +1,9 @@
-header,
-nav,
-section,
-footer {
-  background: #51c5cd;
-  border-radius: 7px;
+header {
+  border-radius: 14px;
   color: #fff;
   margin: 0 1.5% 1em 1.5%;
   padding: 1em 0em;
   text-align: center;
-}
-
-main,
-aside {
-  min-height: 7em;
-}
-
-section {
-  float: right;
-  width: 70%;
-}
-
-aside {
-  float: left;
-  width: 23%;
-}
-
-footer {
-  clear: both;
-  margin-bottom: 0;
-}
-
-header {
   background: no-repeat left/cover url(bg.jpg);
   display: flex;
   height: 120px;
@@ -43,6 +16,47 @@ header {
 header>h1 {
   font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive, fantasy;
   margin: 2%;
+}
+
+nav {
+  background: #51c5cd;
+  border-radius: 7px;
+  color: rgb(245, 239, 197);
+  margin: 0 1.5% 1em 1.5%;
+  padding: 1em 0em;
+  text-align: center;
+}
+
+main {
+  background: #358c68;
+  border-radius: 7px;
+  color: rgb(175, 179, 190);
+  margin: 0 1.5% 1em 1.5%;
+  padding: 1em 0em;
+  text-align: center;
+  float: right;
+  width: 70%;
+  min-height: 7em;
+}
+
+footer {
+  background: #d0cf7c;
+  border-radius: 7px;
+  color: #fff;
+  margin: 0 1.5% 1em 1.5%;
+  padding: 1em 0em;
+  text-align: center;
+  clear: both;
+  margin-bottom: 0;
+}
+
+aside {
+  float: left;
+  width: 23%;
+  min-height: 7em;
+}
+
+footer {
 }
 
 ol {
