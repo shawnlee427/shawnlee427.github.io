@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12"><h1>I'm interested in...</h1></div>
+      </div>
+      
+      <!-- 여행정보 -->
+      <div class="row">
+        <div class="col-3"><h2>유럽여행</h2></div>
+        <div class="col-9"><p>지금까지 총 <b>세번</b>의 <i>유럽 여행</i>을 다녀왔습니다. 튀르키예, 이탈리아, 스페인.</p></div>
+      </div>
+      <div class="row">
+        <div class="col-4 offset-1"><h3>튀르키예<sup>(터키)</sup><img
+          src="https://search.pstatic.net/common?type=o&size=108x81&quality=75&direct=true&src=http%3A%2F%2Fdbscthumb.phinf.naver.net%2F1230_000_1%2F20120625174552925_C9G8JVOMN.png%2F179_p.png%3Ftype%3Dm1500"
+          width="20"></h3></div>
+        <div class="col-6 me-auto"><p><del>터키</del>튀르키예에는 <mark>9박 10일</mark> 여행을 다녀왔습니다. 이스탄불, 카파도키아, 욀류데니즈, 마르마리스, 파묵칼레, 셀축을 여행했습니다.</p></div>
+      </div>
+      <div class="row">
+        <div class="col-3 order-last"><h3>이탈리아<img
+          src="https://search.pstatic.net/common?type=o&size=108x81&quality=75&direct=true&src=http%3A%2F%2Fdbscthumb.phinf.naver.net%2F1230_000_1%2F20120625174548339_T131HHYMQ.png%2F176_p.png%3Ftype%3Dm1500"
+          width="20"></h3></div>
+        <div class="col-6 ms-auto"><p>이탈리아<ins>와 주변국가</ins>들을 <mark>22일</mark>간 부지런히 돌아다녔습니다. 베네치아, 밀라노, 제노바, 피렌체, 로마와 남부의 소도시들을 여행했습니다.</p></div>
+      </div>
+      <div class="row">
+        <div class="col-4"><h3>에스파냐<sup>(스페인)</sup><img
+          src="https://search.pstatic.net/common?type=o&size=108x81&quality=75&direct=true&src=http%3A%2F%2Fdbscthumb.phinf.naver.net%2F1230_000_1%2F20120625174555206_8NASWZD09.png%2F174_p.png%3Ftype%3Dm1500"
+          width="20"></h3></div>
+        <div class="col-6 me-auto"><p>스페인과 포르투갈을 <mark>14일</mark>간 여행했습니다. 마드리드, 바르셀로나, 세비야, 그라나다, 말라가, 론다, 리스본과 주변 소도시들을 여행했습니다.</p></div>
+      </div>      
+      <!-- //여행정보 -->
+    
+    
+      <!-- CV소개 -->
+      <h2>Computer Vision</h2>
+      <p>컴퓨터 비전(CV)은 컴퓨터에게 시각(vision) 데이터 처리 능력을 부여하는 기술이다. 카메라와 센서가 인간의 눈의 기능을 한다면, 컴퓨터 비전은 이 시각 데이터를 처리하는 인지능력이다. 경찰학적으로는
+        사람의 얼굴을 인식하여 신원 데이터를 조회하는 기술로 응용되며, 군사적으로는 피아식별을 통해 사살해야 하는 대상을 찾아내고, 생태학적으로는 야생동물의 이동경로를 추적하거나, 의학적으로는 영상의학과 원격 수술에
+        응용되고 있다.</p>
+    
+      <p><img src="cv.jpg" class="rounded float-end img-thumbnail" width="256"></p>
+      <h3>CNN</h3>
+      <p><em>컨볼루션 신경망</em>. 2012년 인공지능 학회에서 처음으로 발표된 내용이며 반박의 여지가 없는 인공지능 혁명의 시작을 알리는 알고리즘이자 컴퓨터 비전의 핵심이 되는 알고리즘이다. 딥러닝을
+        공부하게 되면 제일 처음으로 접하게 되는 신경망이자 지금도 그 중요도가 매우 높은 알고리즘으로 대우받고 있다. 실제 아래에 설명한 분야들은 다 이 알고리즘을 활용한 분야이다.</p>
+      <ul>
+        <li>
+          <dt><strong>Classification</strong></dt>
+          <dd>이미지가 무슨 이미지인지 분류하는 일이다. 고양이 사진을 고양이라고 판단하는 것과 같다.</dd>
+        </li>
+        <li>
+          <dt><strong>Object detection</strong></dt>
+          <dd>이미지에 물체가 어디에 있는지 네모 박스를 치는 일이다. 고양이 사진에서 고양이 부분에 네모난 영역을 치는 것과 같다.</dd>
+        </li>
+        <li>
+          <dt><strong>Semantic segmentation</strong></dt>
+          <dd>이미지에 물체가 무엇인지 픽셀 단위로 분류하는 일이다. 고양이 사진에서 고양이 부분을 떠내는 것과 같다. 이 때 고양이가 2마리여도 둘 다 고양이라고 판단한다.</dd>
+        </li>
+        <li>
+          <dt><strong>Instance segmentation</strong></dt>
+          <dd>이미지에 물체가 어디에 있는지 픽셀 단위로 판단하는 일이다. 고양이 사진에서 고양이 부분을 떠내되, 고양이마다 다르게 분류해야 한다. 즉, 2마리의 고양이는 서로 달라야 한다.</dd>
+        </li>
+      </ul>
+      <h3>GAN</h3>
+      <p>GAN은 Generative Adversarial Networks의 약자로 우리말로는 “적대적 생성 신경망”이라고 번역되는 AI기술 중 하나입니다.<br> GAN은 실제에 가까운 이미지나 사람이 쓴 것과
+        같은 글 등 여러 가짜 데이터들을 생성하는 모델입니다.<br> “적대적 생성 신경망”이라는 이름에서 알 수 있듯 GAN은 서로 다른 두 개의 네트워크를 적대적으로(adversarial) 학습시키며 실제
+        데이터와 비슷한 데이터를 생성(generative)해내는 모델이며 이렇게 생성된 데이터에 정해진 label값이 없기 때문에 비지도 학습 기반 생성모델로 분류됩니다.</p>
+      <h3>스노우 주식회사</h3>
+      <p>
+        글로벌 No.1 카메라 앱을 만드는 컴퓨터 비전 전문기업 <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dPjtQd2XHYU" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/n5TSyqz9Gow" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/287965645?h=b403ffea77" width="640" height="360" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </p>
+      <!-- //CV소개 -->
+    
+      <!-- 취미 -->
+      <h2>레포츠</h2>
+      <p><img src="ski.jpg" width="512"><img src="diving.png" width="512"><img src="wake.jpg" width="512"><img
+          src="paragliding.jpg" width="512"></p>
+      <h2>좋아하는 문구</h2>
+      <blockquote cite="https://www.britannica.com/topic/carpe-diem">carpe diem</blockquote>
+      <figcaption>- Quintus Horatius Flaccus <cite>Odes</cite></figcaption>
+      <marquee>Tu ne quaesieris, scire nefas, quem mihi, quem tibi
+        finem di dederint, Leuconoe, nec Babylonios
+        temptaris numeros. ut melius, quidquid erit, pati.
+        seu pluris hiemes seu tribuit Iuppiter ultimam,
+        quae nunc oppositis debilitat pumicibus mare
+        Tyrrhenum: sapias, vina liques et spatio brevi
+        spem longam reseces. dum loquimur, fugerit invida
+        aetas: carpe diem, quam minimum credula postero.</marquee>
+      <h2>인상깊은 여행지</h2>
+      <p><a href="delaware.html">델라웨어주</a>, <a href="hochimin.html">호치민</a>, <a href="huashan.html">화산</a>, <a
+          href="yamagata.html">자오온천</a></p>
+      <h2>좋아하는 가수</h2>
+      <p>Miley Cyrus</p>
+      <embed src="https://instagram.com/p/CguSDSlpYQU/embed" frameborder="0" scrolling="no" allowtransparency="true">
+      <iframe src="https://instagram.com/p/CfUODDYpE58/embed" frameborder="0" scrolling="no"
+        allowtransparency="true"></iframe>
+      <blockquote class="instagram-media" data-instgrm-captioned
+        data-instgrm-permalink="https://www.instagram.com/p/CdqvcJ9L8Qr/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-version="14"
+        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+        <div style="padding:16px;"> <a
+            href="https://www.instagram.com/p/CdqvcJ9L8Qr/?utm_source=ig_embed&amp;utm_campaign=loading"
+            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+            target="_blank">
+            <div style=" display: flex; flex-direction: row; align-items: center;">
+              <div
+                style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+              </div>
+              <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                <div
+                  style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                </div>
+                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+              </div>
+            </div>
+            <div style="padding: 19% 0;"></div>
+            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px"
+                viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                xmlns:xlink="https://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                    <g>
+                      <path
+                        d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg></div>
+            <div style="padding-top: 8px;">
+              <div
+                style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                Instagram에서 이 게시물 보기</div>
+            </div>
+            <div style="padding: 12.5% 0;"></div>
+            <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+              <div>
+                <div
+                  style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                </div>
+                <div
+                  style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                </div>
+                <div
+                  style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                </div>
+              </div>
+              <div style="margin-left: 8px;">
+                <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                <div
+                  style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                </div>
+              </div>
+              <div style="margin-left: auto;">
+                <div
+                  style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                </div>
+                <div
+                  style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                </div>
+                <div
+                  style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+              <div
+                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+              </div>
+              <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+            </div>
+          </a>
+          <p
+            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+            <a href="https://www.instagram.com/p/CdqvcJ9L8Qr/?utm_source=ig_embed&amp;utm_campaign=loading"
+              style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+              target="_blank">Miley Cyrus(@mileycyrus)님의 공유 게시물</a>
+          </p>
+        </div>
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+      <h2>싫어하는 것</h2>
+      <p><a href="covid.html">코로나</a></p>
+      <!-- //취미 -->
+    
+    </div>
+    <header>
+    <h1 class="big"><i class="bi bi-1-circle"></i>Hello, world!</h1>
+    </header>
+    <main><img src="cv.jpg" width="200" class="img-responsive img-thumbnail"></main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
