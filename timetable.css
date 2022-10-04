@@ -47,7 +47,7 @@ input[type="button"],input[type="submit"],input[type="search"] {
 }
 
 body {
-	overflow: hidden;
+	overflow: scroll;
 }
 #bottom {
 	display: none;
@@ -56,10 +56,10 @@ body {
 /* * * * * * * * * * * * * * * * * * * * * * * * *  /  common  /  * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #container div.tablehead > div.empty {
-	padding: 120px 0; text-align: center;
+	padding: 10px 0; text-align: center;
 }
 #container div.tablehead > div.empty > p {
-	display: inline-block; padding-top: 52px; color: #a6a6a6; font-size: 18px; font-weight: bold; background: transparent url('/images/container.timetable.empty.png') no-repeat top center; background-size: 48px 44px;
+	display: inline-block; padding-top: 5px; color: #a6a6a6; font-size: 18px; font-weight: bold; background: transparent url('/images/container.timetable.empty.png') no-repeat top center; background-size: 48px 44px;
 }
 
 #container table.tablehead,
@@ -84,10 +84,10 @@ body {
 	border: 1px solid #d6d6d6; vertical-align: top;
 }
 #container table.tablebody tr th div.hours {
-	position: absolute; z-index: 11;
+	position: relative; z-index: 11;
 }
 #container table.tablebody tr th div.hours div.hour {
-	position: absolute; z-index: 10; left: 0; width: 100%;
+	position: relative; z-index: 10; left: 0; width: 100%;
 }
 #container table.tablebody tr th div.hours div.hour,
 #container table.tablebody tr th div.times div.time {
@@ -95,10 +95,10 @@ body {
 	color: #a6a6a6; font-weight: normal; text-align: center;
 }
 #container table.tablebody tr td div.cols {
-	position: absolute; z-index: 11;
+	position: relative; z-index: 11;
 }
 #container table.tablebody tr td div.cols div.subject {
-	position: absolute; z-index: 10; overflow: hidden;
+	position: relative; z-index: 10; overflow: hidden;
 	box-sizing: border-box; width: 100%; border: 1px solid #d6d6d6; border-width: 1px 0;
 }
 #container table.tablebody tr td div.cols div.subject h3 {
@@ -154,23 +154,6 @@ body {
 	width: 24px; height: 24px; background: transparent url('/images/container.timetable.del.png') no-repeat center center; cursor: pointer;
 }
 
-#container ul.floating {
-	position: fixed; z-index: 80; bottom: 15px;
-}
-#container ul.floating li.button {
-	float: left; margin: 0 1px; height: 40px; line-height: 40px; cursor: pointer;
-	color: #fff; font-size: 14px; font-weight: bold; background-color: #c62917; background-repeat: no-repeat;
-}
-#container ul.floating li.button.search {
-	padding: 0 15px 0 45px; border-radius: 20px 0 0 20px; background-image: url('/images/container.timetable.search.icon.png'); background-position: 20px center;
-}
-#container ul.floating li.button.custom {
-	padding: 0 20px 0 30px; border-radius: 0 20px 20px 0; background-image: url('/images/container.timetable.custom.icon.png'); background-position: 10px center;
-}
-#container ul.floating li.button.only {
-	padding: 0 25px 0 50px; border-radius: 20px; background-position: 25px center;
-}
-
 .color1 { background-color: #f2e8e8; }
 .color2 { background-color: #ffe9e9; }
 .color3 { background-color: #eff9cc; }
@@ -206,11 +189,11 @@ body {
 
 @media only screen and (min-width: 641px) {
 	#container div.tablehead {
-		position: fixed; z-index: 90; margin-top: -15px; padding-top: 15px; width: inherit;
+		position: fixed; z-index: 90; margin-top: 0px; padding-top: 0px; width: inherit;
 		background-color: #f8f8f8;
 	}
 	#container div.tablebody {
-		margin-top: 39px; width: inherit;
+		margin-top: 20px; width: inherit;
 	}
 }
 
