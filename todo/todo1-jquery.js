@@ -1,10 +1,24 @@
 const todoListElem = $('#todo-container');
 
-let todos = [{ content: "중간 프로젝트 DUE 2022-10-24 23:59" }];
+let todos = [{ id: 1, content: "중간 프로젝트 DUE 2022-10-28 23:59", isCompleted: false }];
+
+let id = 1; // set initial id value
+
+const completeTodo = (completeId) => {
+    $.each(todos, (_, todo) => {
+        if (todo.id == completeId) {
+            todo.isCompleted = !todo.isCompleted;
+        }
+    });
+    paintTodos();
+}
 
 const paintTodo = (_, todo) => {
     const todoItemElem = $('<div>').addClass('todo-item col col-12 p-2 input-group');
+    const checkboxElem = $('<div>').addClass('checkbox input-group-prepend text-dark').text(todo.isCompleted ? "✔" : "☐");
+    checkboxElem.click(() => completeTodo(todo.id));
     const todoElem = $('<input>').attr("type", "text").attr("disabled", true).addClass("todo form-control").val(todo.content);
+    todoItemElem.append(checkboxElem);
     todoItemElem.append(todoElem);
     todoListElem.append(todoItemElem);
 }
@@ -18,7 +32,8 @@ const todoInputElem = $('#todo-input');
 const todoAddBtnElem = $("#todo-btn-add");
 
 const appendTodos = (text) => {
-    const newTodos = todos.concat({ content: text });
+    let newId = ++id;
+    const newTodos = todos.concat({ id: newId, content: text, isCompleted: false });
     todos = newTodos;
     paintTodos();
 }
@@ -36,6 +51,6 @@ const init = () => {
     paintTodos();
 }
 
-$(function() {
+$(function () {
     init();
 });
